@@ -1,0 +1,11 @@
+import random
+import time
+num = int(input('Adivinha o numero de 1 a 5: '))
+sorteio=random.randint(1,5)
+print('PROCESSANDO...')
+time.sleep(2)
+print('Eu pensei no número {}'.format(sorteio))
+if sorteio==num:
+    print('PARABÉNS! Você ganhou')
+else:
+    print('EU GANHEI.Você errou, tente novamente.')
